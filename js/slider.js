@@ -26,10 +26,10 @@ $(document).ready(function(){
     slidesToShow: 1,
     adaptiveHeight: true
   });
-  $("#Benefits div.content_c div.slider .slick-prev").append(
+  $(".creaters .slider .slick-prev").append(
     '<i class="xi-angle-left"></i>'
   );
-  $("#Benefits div.content_c div.slider .slick-next").append(
+  $(".creaters .slider .slick-next").append(
     '<i class="xi-angle-right"></i>'
     );
 });

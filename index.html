@@ -25,15 +25,15 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/slider.js"></script>
-
 </head>
 <body>
+
   <header id="header">
     <h1><a href="#none"></a></h1>
-    <nav class="sitemap">
-      <ul class="depht_01">
+    <nav class="menu-box">
+      <ul class="menu">
         <li><a href="#none">새소식</a>
-          <ul>
+          <ul class="depht_02">
             <li><a href="#none">공지사항</a></li>
             <li><a href="#none">업데이트</a></li>
             <li><a href="#none">이벤트</a></li>
@@ -43,7 +43,7 @@
           </ul>
         </li>
         <li><a href="#none">게임소개</a>
-          <ul>
+          <ul class="depht_02">
             <li><a href="#none">테일즈런너 소개</a></li>
             <li><a href="#none">게임방법</a></li>
             <li><a href="#none">게임정보</a></li>
@@ -51,7 +51,7 @@
           </ul>
         </li>
         <li><a href="#none">커뮤니티</a>
-          <ul>
+          <ul class="depht_02">
             <li><a href="#none">런너게시판</a></li>
             <li><a href="#none">창작게시판</a></li>
             <li><a href="#none">공략게시판</a></li>
@@ -60,7 +60,7 @@
           </ul>
         </li>
         <li><a href="#none">랭킹</a>
-          <ul>
+          <ul class="depht_02">
             <li><a href="#none">종합랭킹</a></li>
             <li><a href="#none">일일랭킹</a></li>
             <li><a href="#none">주간랭킹</a></li>
@@ -71,7 +71,7 @@
           </ul>
         </li>
         <li><a href="#none">고객지원</a>
-          <ul>
+          <ul class="depht_02">
             <li><a href="#none">도움말/문의하기</a></li>
             <li><a href="#none">2차비밀번호초기화</a></li>
             <li><a href="#none">다운로드</a></li>
@@ -85,57 +85,60 @@
     <div><span></span><span></span></div>
     </label>
     <nav class="search_bar">
-      <div class="search_w">
+      <div class="search_width">
         <input type="text"><input type="submit">
         <i class="xi-search"></i>
       </div>
     </nav>
   </header>
+
   <div id="main_banner">
-    <div class="main_01"><a href="#none"></a></div>
-    <div class="main_02"><a href="#none"></a></div>
-    <div class="main_03"><a href="#none"></a></div>
+    <div class="banner_01"><a href="#none"></a></div>
+    <div class="banner_02"><a href="#none"></a></div>
+    <div class="banner_03"><a href="#none"></a></div>
   </div>
-  <section id="start">
+
+  <section id="middle_menu">
     <p><a href="#none">로그인</a></p>
-    <div class="shrot">
+    <div class="shrotcut">
       <p><a href="#none">회원가입</a><img src="" alt=""></p>
       <p><a href="#none">ID/PW 찾기</a><img src="" alt=""></p>
       <p><a href="#none">PC방 혜택</a><img src="" alt=""></p>
       <p><a href="#none">휴면계정복구</a><img src="" alt=""></p>
     </div>
-    <div class="start">
+    <div class="game-start">
       <p><a href="#none">게임 다운로드</a>
       <p><a href="#">게임시작</a></p>
     </div>
   </section>
-  <section id="community">
-    <div class="content">
-      <div>
+
+  <section id="noticeWrap">
+    <div class="container">
+      <div class="community">
         <h5><a href="#none">핫 이슈 커뮤니티</a></h5>
-        <div class="commu_01">
-          <a href="#none"><span class="commu_img_01">
+        <div class="community_01">
+          <a href="#none"><span class="community_img_01">
           <a href="#none" class="point"></a>
           </span></a>
           <h6><a href="#none">전국 최애캐 미호 자랑★</a></h6>
           <p><a href="#none">솔애내리는 비</a></p>
         </div>
-        <div class="commu_01">
-          <a href="#none"><span class="commu_img_02">
+        <div class="community_01">
+          <a href="#none"><span class="community_img_02">
           <a href="#none" class="point"></a>
           </span></a>
           <h6><a href="#none">'뮤직 Q','화려힌 조명'맵 공략!</a></h6>
           <p><a href="#none">Strode</a></p>
         </div>
-        <div class="commu_01">
-          <a href="#none"><span class="commu_img_03">
+        <div class="community_01">
+          <a href="#none"><span class="community_img_03">
           <a href="#none" class="point"></a>
           </span></a>
           <h6><a href="#none">테일즈드림☆콘서트</a></h6>
           <p><a href="#none">진흑</a></p>
         </div>
       </div>
-      <div class="notic">
+      <div class="notice">
         <h5>공지사항</h5>
         <ul>
           <li>
@@ -158,8 +161,9 @@
       </div>
     </div>
   </section>
-  <section id="news" class="content">
-    <div class="news">
+
+  <section id="news" class="container">
+    <div class="newswrap">
       <h3>삐에로 소식</h3>
       <ul>
         <li>
@@ -181,7 +185,8 @@
       <div class="news_right">
       </div>
   </section>
-  <section id="Benefits" class="content">
+
+  <section id="lowerContent" class="container">
     <ul class="ad">
       <li>
         <a href="#none">
@@ -200,7 +205,7 @@
     </ul>
     <div class="keyword">
       <h3>키워드 톡톡</h3>
-      <div class="keyword_s">
+      <div class="keyword_btn">
         <span><a href="#none">#드림</a></span>
         <span><a href="#none">#솜사탕</a></span>
         <span><a href="#none">#뮤직</a></span>
@@ -213,7 +218,7 @@
         <li><a href="#none"><span>드림</span>스타디움 공략 찍으신 분 계시나욤 ㅠ</a></li>
       </ul>
     </div>
-    <div class="content_c">
+    <div class="creaters">
       <h3>콘텐츠 크리에이터</h3>
       <div class="slider">
         <div>
@@ -254,7 +259,8 @@
       </div>
     </div>
   </section>
-  <section id="sns" class="content">
+
+  <section id="sns" class="container">
     <ul>
       <li>
         <a href="#none" class="sns_img"></a>
@@ -294,6 +300,7 @@
       </li>
     </ul>
   </section>
+  
   <footer>
     <div class="line">
       <ul class="ci">
@@ -302,7 +309,7 @@
         <li><a href="#none"><img src="./img/ci_rhaon.jpg" alt="rhaon logo"></a></li>
       </ul>
     </div>
-    <div class="content">
+    <div class="container">
       <ul class="service">
         <li><a href="#none">회사소개</a></li>
         <li><a href="#none">이용약관</a></li>
