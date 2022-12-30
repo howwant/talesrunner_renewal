@@ -5,6 +5,9 @@
   font-weight: normal;
   font-style: normal; }
 
+body {
+  min-width: 1200px; }
+
 * {
   font-family: 'Noto Sans KR', sans-serif;
   padding: 0;
@@ -17,7 +20,7 @@ a {
   text-decoration: none; }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto; }
 
 #header {
@@ -81,8 +84,7 @@ a {
   background-color: rgba(0, 0, 0, 0.45);
   text-align: center;
   transition: 0.5s;
-  width: 100%;
-  min-width: 1000px; }
+  width: 100%; }
   .menu-box:hover {
     background-color: #00184d; }
 
@@ -255,7 +257,7 @@ a {
   background-size: cover; }
 
 #middle_menu {
-  width: 1300px;
+  max-width: 1300px;
   margin: -4% auto 0 auto;
   background-color: #fff;
   border-radius: 65px;
@@ -353,30 +355,35 @@ a {
     .community h5 a {
       color: #000; }
 
-.community_01 {
+.community_item {
   position: relative;
   width: 30%; }
-  .community_01:nth-child(3), .community_01:nth-child(4) {
+  .community_item:nth-child(3), .community_item:nth-child(4) {
     margin-left: 30px; }
-  .community_01:nth-child(3) a.point {
+  .community_item:nth-child(3) a.point {
     background-position: -275px 0px; }
-  .community_01:nth-child(4) a.point {
+  .community_item:nth-child(4) a.point {
     background-position: -320px 0px; }
-  .community_01:hover h6 a {
+  .community_item:hover h6 a {
     color: #db4766; }
-  .community_01 span {
+  .community_item span {
     display: block;
     background-size: cover;
-    width: 240px;
+    width: 100%;
+    max-width: 240px;
     height: 170px; }
-  .community_01 h6 {
+  .community_item h6 {
     line-height: 44px;
     font-size: 17px; }
-    .community_01 h6 a {
-      color: #000; }
-  .community_01 p {
+    .community_item h6 a {
+      color: #000;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  .community_item p {
     font-size: 13px; }
-    .community_01 p a {
+    .community_item p a {
       color: #666; }
 
 .community_img_01 {
@@ -409,7 +416,12 @@ a {
     color: #db4766; }
   .notice li p a {
     font-size: 17px;
-    color: #000; }
+    color: #000;
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .notice li span a {
     font-size: 15px;
     color: #a9a9a9;
@@ -502,20 +514,9 @@ a {
           margin-top: 15px;
           border-radius: 21px; }
 
-.keyword_btn {
-  display: inline-block;
-  margin-left: 250px; }
-  .keyword_btn span:first-child a {
-    color: #db4766; }
-    .keyword_btn span:first-child a:hover {
-      color: #0d204a; }
-  .keyword_btn a {
-    color: #59beff; }
-    .keyword_btn a:hover {
-      color: #0d204a; }
-
 .keyword {
-  width: 40%; }
+  width: 40%;
+  position: relative; }
   .keyword h3 {
     display: inline-block;
     font-size: 20px; }
@@ -536,6 +537,19 @@ a {
         line-height: 38px; }
         .keyword ul li a span {
           color: #db4766; }
+
+.keyword_btn {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .keyword_btn span:first-child a {
+    color: #db4766; }
+    .keyword_btn span:first-child a:hover {
+      color: #0d204a; }
+  .keyword_btn a {
+    color: #59beff; }
+    .keyword_btn a:hover {
+      color: #0d204a; }
 
 .creaters {
   width: 27%;
@@ -656,7 +670,7 @@ footer .container {
     bottom: 10px; }
 
 .ci {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex; }
 
@@ -685,3 +699,28 @@ footer .container {
   color: #777; }
   .infor li {
     padding-left: 10px; }
+
+@media screen and (max-width: 1350px) {
+  #middle_menu {
+    margin: -4% 20px 0 20px; }
+  #noticeWrap, #news {
+    margin: 40px 20px; }
+  #lowerContent, .ci {
+    margin: 0 20px; }
+  #sns {
+    margin: 20px; } }
+
+@media screen and (max-width: 1300px) {
+  .newswrap ul li p {
+    width: calc(97% - 128px);
+    padding: 16px 0; }
+    .newswrap ul li p a br {
+      display: none; }
+    .newswrap ul li p a span {
+      display: block; } }
+
+@media screen and (max-width: 1200px) {
+  footer .container img {
+    bottom: calc(100% + 48px); }
+  .shrotcut {
+    margin-left: 0; } }

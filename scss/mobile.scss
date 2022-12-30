@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+@mixin text-overflow {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body {
+    padding-top: 56px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#overWrite {
+    ul, li ol {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: #212529;
+    }
+// nav
+.navbar-nav .accordion-body {
+    padding: 0 10px;
+}
+    .navbar-toggler{
+        border: 0;
+        &:focus {
+            box-shadow:none
+        }
+    }
+    // 커뮤니티
+    .card {
+        padding: 0;
+    }
+
+    .community {
+        display: flex;
+        margin: 10px;
+        justify-content: space-between;
+        h5 {
+            width: 100%;
+            padding: 0;
+        }
+        .card {
+            width: 32%;
+            .card-body {
+                padding: 10px;
+            }
+            .card-title {
+                font-size: 1rem;
+                font-weight: bold;
+                @include text-overflow;
+            }
+        }
+    }
+
+}
+
+
+
+.depht_02{
+    padding: 0;
+    li {
+        &:not(:last-child) {
+            border-bottom: 1px solid #eee;
+        }
+        a {
+            display: block;
+            padding: 10px 0;
+        }
+    } 
+}

@@ -32,4 +32,9 @@ $(document).ready(function(){
   $(".creaters .slider .slick-next").append(
     '<i class="xi-angle-right"></i>'
     );
+
+  // 모바일일 경우
+  if(jQuery.browser.mobile == true){ 
+    location.replace('../mobile/index.html');
+  }
 });
