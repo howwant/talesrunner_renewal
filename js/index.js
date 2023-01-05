@@ -35,6 +35,8 @@ $(document).ready(function(){
 
   // 모바일일 경우
   if(jQuery.browser.mobile == true){ 
-    location.replace('../mobile/');
+    const url = location.href;
+    const newStr = url.substring(0, url.length - 1);
+    location.replace(newStr +'/mobile/');
   }
 });
